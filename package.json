@@ -1,0 +1,43 @@
+{
+  "name": "cuhk-roommate-board",
+  "version": "1.0.0",
+  "description": "A roommate-finding board for verified current CUHK students.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estherzhangyunwen/lau4seoi2saan1sing4.git"
+  },
+  "keywords": [
+    "cuhk",
+    "roommates",
+    "students"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estherzhangyunwen/lau4seoi2saan1sing4/issues"
+  },
+  "homepage": "https://github.com/estherzhangyunwen/lau4seoi2saan1sing4#readme",
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.0.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "eslint": "^10.5.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vite": "^8.0.16"
+  }
+}
