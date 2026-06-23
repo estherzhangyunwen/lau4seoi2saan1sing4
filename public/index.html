@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUHK Roommate Finder</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>CUHK Roommate Finder</h1>
+      <p class="subtitle">
+        Only verified current CUHK students can publish listings.
+      </p>
+
+      <section class="card">
+        <h2>1) Verify student status</h2>
+        <form id="request-form">
+          <label for="email">CUHK Email</label>
+          <input id="email" name="email" type="email" placeholder="yourid@link.cuhk.edu.hk" required />
+          <button type="submit">Request verification code</button>
+        </form>
+
+        <form id="confirm-form">
+          <label for="code">Verification Code</label>
+          <input id="code" name="code" type="text" minlength="6" maxlength="6" required />
+          <button type="submit">Confirm verification</button>
+        </form>
+        <p id="verification-message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>2) Create roommate post</h2>
+        <form id="post-form">
+          <label for="title">Post title</label>
+          <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Looking for one roommate near MTR, move-in Aug"
+            required
+          />
+
+          <label for="preferredArea">Preferred area</label>
+          <input id="preferredArea" name="preferredArea" type="text" placeholder="Sha Tin / Ma On Shan" required />
+
+          <label for="budget">Budget</label>
+          <input id="budget" name="budget" type="text" placeholder="HKD 7000-9000" required />
+
+          <label for="moveInMonth">Move-in month</label>
+          <input id="moveInMonth" name="moveInMonth" type="text" placeholder="2026-08" required />
+
+          <label for="contact">Contact</label>
+          <input id="contact" name="contact" type="text" placeholder="IG / WhatsApp / Telegram" required />
+
+          <label for="notes">Description</label>
+          <textarea
+            id="notes"
+            name="notes"
+            rows="5"
+            placeholder="Introduce yourself, schedule, preferences, and any requirements."
+            required
+          ></textarea>
+          <button type="submit">Publish post</button>
+        </form>
+        <p id="post-message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Latest listings</h2>
+        <button id="refresh-posts" type="button">Refresh posts</button>
+        <ul id="post-list" class="post-list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
