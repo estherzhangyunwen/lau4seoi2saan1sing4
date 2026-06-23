@@ -34,5 +34,5 @@ test("validates roommate post payload", () => {
     notes: "short text",
     contact: "",
   });
-  assert.equal(invalid.errors.length, 5);
+  assert.equal(invalid.errors.length, 6);
 });
